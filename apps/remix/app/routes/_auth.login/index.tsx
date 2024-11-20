@@ -46,12 +46,12 @@ export default function Login() {
   return (
     <Form method="post" replace>
       <div className="stack">
-        <h1 className="text-4xl">Login</h1>
+        <h1 className="text-4xl">Авторизация</h1>
         <input type="hidden" name="redirectTo" value={params.get("redirectTo") || ""} />
-        <FormField required label="Email address" name="email" placeholder="jim@gmail.com" />
-        <FormField required label="Password" name="password" type="password" placeholder="********" />
+        <FormField required label="Введите адрес" name="email" placeholder="jim@gmail.com" />
+        <FormField required label="Пароль" name="password" type="password" placeholder="********" />
         <div>
-          <FormButton className="w-full">Login</FormButton>
+          <FormButton className="w-full">Войти</FormButton>
           <FormError />
         </div>
 
@@ -60,7 +60,7 @@ export default function Login() {
             Register
           </Link>
           <Link to="/forgot-password" className="hover:opacity-70">
-            Forgot password?
+            Забыли пароль?
           </Link>
         </div>
       </div>

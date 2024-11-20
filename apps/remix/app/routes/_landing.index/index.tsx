@@ -67,9 +67,6 @@ export default function Home() {
       <Limiter className="!px-0">
         <Faq />
       </Limiter>
-      <Limiter>
-        <Download />
-      </Limiter>
     </>
   )
 }

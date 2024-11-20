@@ -31,7 +31,7 @@ export default function Managers() {
 
   return (
     <div className="stack">
-      <h1 className="text-4xl text-center mb-8">Менеджеры</h1>
+      <h1 className="text-4xl text-center mb-8">Диспетчеры</h1>
       <Search />
       <Tile>
         <Table<Manager> data={mangers} take={TAKE} count={count}>

@@ -37,9 +37,9 @@ export default function ForgotPassword() {
   return (
     <Form method="post">
       <div className="stack">
-        <h1 className="text-4xl font-bold">Forgot password?</h1>
+        <h1 className="text-4xl font-bold">Забыли пароль?</h1>
         <p>Enter your email below to receive your password reset instructions.</p>
-        <FormField required label="Email address" name="email" placeholder="jim@gmail.com" />
+        <FormField required label="Введите адрес" name="email" placeholder="jim@gmail.com" />
         <FormError />
         <FormButton className="w-full">Send instructions</FormButton>
         <Link to="/login">Login</Link>

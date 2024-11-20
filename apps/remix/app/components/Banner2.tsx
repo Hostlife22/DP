@@ -4,7 +4,7 @@ export const Banner2 = () => {
       <div className="container py-28 text-center text-white mx-auto">
         <div className="flex flex-col justify-center gap-5 lg:flex-row">
           <div className="text-4xl font-bold">
-            <h2>Забронируйте автомобиль, связавшись с нами</h2>
+            <h2>При любом вопосе обращаться по номеру</h2>
           </div>
 
           <div className="flex items-center justify-center gap-3 whitespace-nowrap text-3xl font-medium text-green-600">

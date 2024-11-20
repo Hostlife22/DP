@@ -64,7 +64,7 @@ const Navbar = ({ isDark, isAuth }: INavbarProps): ReactElement => {
             <NavLink to={"/about"}>О нас</NavLink>
             <NavLink to={"/vehicles"}>Автомобили</NavLink>
             <NavLink to={"/testimonials"}>Отзывы</NavLink>
-            <NavLink to={"/team"}>Наша команда</NavLink>
+            <NavLink to={"/team"}>Руководство</NavLink>
             <NavLink to={"/contact"}>Контакты</NavLink>
           </ul>
         </div>
@@ -79,7 +79,7 @@ const Navbar = ({ isDark, isAuth }: INavbarProps): ReactElement => {
             <NavLink to={"/about"}>О нас</NavLink>
             <NavLink to={"/vehicles"}>Автомобили</NavLink>
             <NavLink to={"/testimonials"}>Отзывы</NavLink>
-            <NavLink to={"/team"}>Наша команда</NavLink>
+            <NavLink to={"/team"}>Руководство</NavLink>
             <NavLink to={"/contact"}>Контакты</NavLink>
           </ul>
           <div className="flex gap-5">

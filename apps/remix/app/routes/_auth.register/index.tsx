@@ -74,11 +74,11 @@ export default function Register() {
     <div>
       <Form method="post" replace>
         <div className="stack">
-          <h1 className="text-4xl font-bold">Register</h1>
-          <FormField required label="Email address" name="email" placeholder="valery-pukhnarevich@gmail.com" />
-          <FormField required label="Password" name="password" type="password" placeholder="********" />
+          <h1 className="text-4xl font-bold">Регистрация</h1>
+          <FormField required label="Введите адрес" name="email" placeholder="valery-pukhnarevich@gmail.com" />
+          <FormField required label="Пароль" name="password" type="password" placeholder="********" />
           <input name="passwordConfirmation" className="hidden" />
-          <FormField required label="Name" name="name" placeholder="Valery Pukhnarevich" />
+          <FormField required label="Имя" name="name" placeholder="Valery Pukhnarevich" />
           <FormField
             required
             label="Rental type"
@@ -107,7 +107,7 @@ export default function Register() {
               Login
             </Link>
             <Link to="/forgot-password" className="hover:opacity-70">
-              Forgot password?
+              Забыли пароль?
             </Link>
           </div>
         </div>

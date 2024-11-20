@@ -3,12 +3,12 @@ import * as yup from "yup";
 const today = new Date();
 
 export const schema = yup.object().shape({
-  carType: yup.string().required("field is required"),
-  pickLocation: yup.string().required("field is required"),
-  dropLocation: yup.string().required("field is required"),
+  carType: yup.string().required("Заполните данные"),
+  pickLocation: yup.string().required("Заполните данные"),
+  dropLocation: yup.string().required("Заполните данные"),
   pickDate: yup
     .string()
-    .required("field is required")
+    .required("Заполните данные")
     .test(
       "is-future",
       "The pick-up date must be in the future",
@@ -19,7 +19,7 @@ export const schema = yup.object().shape({
     ),
   dropDate: yup
     .string()
-    .required("field is required")
+    .required("Заполните данные")
     .test(
       "is-after-pickDate",
       "The drop-off date must be the same as or later than the pick-up date",

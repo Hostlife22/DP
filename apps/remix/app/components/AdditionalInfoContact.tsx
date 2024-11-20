@@ -25,7 +25,7 @@ export const AdditionalInfoContact = () => {
         </div>
       </a>
 
-      <a href="mailto:email@example.com" className="transition-all hover:text-green-600">
+      <a href="mailto:ruzhanu-agro@mail.ru" className="transition-all hover:text-green-600">
         <div className="flex justify-center gap-2">
           <div className="w-6">
             <svg
@@ -42,7 +42,7 @@ export const AdditionalInfoContact = () => {
             </svg>
           </div>
           <div>
-            <p className="font-medium ">email@example.com</p>
+            <p className="font-medium ">ruzhanu-agro@mail.ru</p>
           </div>
         </div>
       </a>
@@ -62,7 +62,7 @@ export const AdditionalInfoContact = () => {
           </svg>
         </div>
         <div>
-          <p className="font-medium ">Минск, Беларусь</p>
+          <p className="font-medium ">Ружаны, Беларусь</p>
         </div>
       </div>
     </div>

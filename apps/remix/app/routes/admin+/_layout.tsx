@@ -32,12 +32,12 @@ export default function AdminLayout() {
             </li>
             <li>
               <NavLink to="managers" className={({ isActive }) => join("", isActive && "text-primary-500")}>
-                Менеджеры
+                Диспетчеры
               </NavLink>
             </li>
             <li>
               <NavLink to="customers" className={({ isActive }) => join("", isActive && "text-primary-500")}>
-                Клиенты
+                Работники
               </NavLink>
             </li>
             <li>

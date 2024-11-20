@@ -19,7 +19,7 @@ import { FlashType, getFlashSession } from "~/services/session/flash.server"
 const TAKE = 10
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Клиенты" }, { name: "description", content: "Клиенты оформившие заказ" }]
+  return [{ title: "Работники" }, { name: "description", content: "Работники оформившие заказ" }]
 }
 export const headers = () => {
   return {
@@ -105,7 +105,7 @@ export default function Customers() {
 
   return (
     <div className="stack">
-      <h1 className="text-4xl text-center mb-8">Клиенты</h1>
+      <h1 className="text-4xl text-center mb-8">Работники</h1>
       <Search />
       <Tile>
         <Table<Customer>

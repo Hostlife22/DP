@@ -17,13 +17,12 @@ export const Pick = () => {
     <div className="flex justify-center">
       <div className="container py-20">
         <div className="text-center">
-          <h3 className="text-2xl font-semibold">Модели автомобилей</h3>
+          <h3 className="text-2xl font-semibold">Модели техники</h3>
           <h2 className="py-5 text-5xl font-semibold">
-            Наш <span className="text-green-600">арендный</span> парк
+            Наш <span className="text-green-600">агропарк</span> парк
           </h2>
           <p className="py-3 text-gray2">
-            Выбирайте из множества наших замечательных автомобилей, чтобы арендовать их для вашего следующего приключения или
-            деловой поездки.
+          Выбирайте из множества единиц нашей сельскохозяйственной техники, чтобы забронировать её для вашей следующей смены или других задач
           </p>
         </div>
 
@@ -55,7 +54,7 @@ export const Pick = () => {
               brand={selectedVehicle.brand}
               model={selectedVehicle.model}
               year={selectedVehicle.year}
-              doors={selectedVehicle.doors}
+              Privod={selectedVehicle.Privod}
               ac={selectedVehicle.ac}
               transmission={selectedVehicle.transmission}
               fuel={selectedVehicle.fuel}

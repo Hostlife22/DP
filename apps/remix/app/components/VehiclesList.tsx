@@ -11,7 +11,7 @@ export const VehiclesList = () => {
             brand={vehicle.brand}
             model={vehicle.model}
             price={vehicle.cost}
-            door={vehicle.doors}
+            door={vehicle.Privod}
             transmission={vehicle.transmission}
             fuel={vehicle.fuel}
             line={vehicle.line}

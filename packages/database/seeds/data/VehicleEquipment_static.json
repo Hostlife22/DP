@@ -1,6 +1,6 @@
 [
   {
-    "key": "doors",
+    "key": "Privod",
     "value": "2/3",
     "vehicleId": {
       "type": "Vehicle",
@@ -30,7 +30,7 @@
     }
   },
   {
-    "key": "doors",
+    "key": "Privod",
     "value": "4/5",
     "vehicleId": {
       "type": "Vehicle",
@@ -60,7 +60,7 @@
     }
   },
   {
-    "key": "doors",
+    "key": "Privod",
     "value": "4/5",
     "vehicleId": {
       "type": "Vehicle",
@@ -90,7 +90,7 @@
     }
   },
   {
-    "key": "doors",
+    "key": "Privod",
     "value": "4/5",
     "vehicleId": {
       "type": "Vehicle",
@@ -120,7 +120,7 @@
     }
   },
   {
-    "key": "doors",
+    "key": "Privod",
     "value": "4/5",
     "vehicleId": {
       "type": "Vehicle",
@@ -150,7 +150,7 @@
     }
   },
   {
-    "key": "doors",
+    "key": "Privod",
     "value": "4/5",
     "vehicleId": {
       "type": "Vehicle",

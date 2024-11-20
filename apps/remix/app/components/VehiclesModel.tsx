@@ -102,7 +102,7 @@ export const VehiclesModel = ({ image, brand, model, price, door, transmission, 
           </div>
 
           <div>
-            Двери: <span className="font-medium">{door}</span>
+            Привод: <span className="font-medium">{door}</span>
           </div>
           <div>
             Трансмиссия: <span className="font-medium">{transmission}</span>
