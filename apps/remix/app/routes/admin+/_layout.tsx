@@ -42,7 +42,7 @@ export default function AdminLayout() {
             </li>
             <li>
               <NavLink to="location" className={({ isActive }) => join("", isActive && "text-primary-500")}>
-                Города
+                Маршруты
               </NavLink>
             </li>
             <li>

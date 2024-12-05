@@ -92,7 +92,7 @@ export const VehiclesModel = ({ image, brand, model, price, door, transmission, 
 
           <div className="pl-5">
             <p className="text-2xl font-medium">{price}</p>
-            <p>в сутки</p>
+            <p>Оценка состояния</p>
           </div>
         </div>
         <div className="grid grid-cols-1 gap-3">

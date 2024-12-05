@@ -22,7 +22,7 @@ export const headers = () => {
 export const action = async ({ request }: ActionFunctionArgs) => {
   const formData = await request.formData()
   const loginSchema = z.object({
-    email: z.string().min(3).email("Invalid email"),
+    email: z.string().min(3).email("Неверный адрес электронной почты"),
     password: z.string().min(8, "Must be at least 8 characters"),
     redirectTo: z.string().nullable().optional(),
   })
@@ -37,7 +37,7 @@ export const action = async ({ request }: ActionFunctionArgs) => {
     return redirect(redirectTo || "/", { headers })
   } catch (error) {
     if (error instanceof TRPCClientError) return formError({ formError: error.message })
-    return formError({ formError: "Incorrect email or password" })
+    return formError({ formError: "Неправильный адрес электронной почты или пароль" })
   }
 }
 
@@ -57,7 +57,7 @@ export default function Login() {
 
         <div className="flex justify-between">
           <Link to="/register" className="hover:opacity-70">
-            Register
+            Регистрация
           </Link>
           <Link to="/forgot-password" className="hover:opacity-70">
             Забыли пароль?

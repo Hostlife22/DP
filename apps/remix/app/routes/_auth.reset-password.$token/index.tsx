@@ -42,14 +42,14 @@ export default function ResetPassword() {
     <Form method="post">
       <div className="stack">
         <div>
-          <h1 className="text-4xl font-bold">Reset password</h1>
-          <p>Enter a new password below.</p>
+          <h1 className="text-4xl font-bold">Сбросить пароль</h1>
+          <p>Введите новый пароль ниже.</p>
         </div>
         <input name="token" type="hidden" value={token} />
-        <FormField required label="Password" name="password" type="password" placeholder="********" />
+        <FormField required label="Пароль" name="password" type="password" placeholder="********" />
         <FormError />
-        <FormButton className="w-full">Reset</FormButton>
-        <Link to="/login">Login</Link>
+        <FormButton className="w-full">Сбросить пароль</FormButton>
+        <Link to="/login">Логин</Link>
       </div>
     </Form>
   )

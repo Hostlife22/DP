@@ -11,7 +11,7 @@ export const schema = yup.object().shape({
     .required("Заполните данные")
     .test(
       "is-future",
-      "The pick-up date must be in the future",
+      "Дата получения должна быть в будущем.",
       function (value) {
         const dateValue = new Date(value);
         return dateValue > today;
@@ -22,7 +22,7 @@ export const schema = yup.object().shape({
     .required("Заполните данные")
     .test(
       "is-after-pickDate",
-      "The drop-off date must be the same as or later than the pick-up date",
+      "Дата сдачи должна совпадать или быть позже даты получения.",
       function (value, context) {
         const { pickDate } = context.parent;
         if (!pickDate) {

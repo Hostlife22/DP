@@ -1,14 +1,14 @@
-import audi1 from "../assets/images/cars-big/audi-box.png"
+import audi1 from "../assets/images/cars-big/audia1.jpg"
 import audi2 from "../assets/images/cars-big/audia1.jpg"
 import mercedes1 from "../assets/images/cars-big/benz-box.png"
 import mercedes2 from "../assets/images/cars-big/benz.jpg"
 import bmw1 from "../assets/images/cars-big/bmw-box.png"
 import bmw2 from "../assets/images/cars-big/bmw320.jpg"
-import golf1 from "../assets/images/cars-big/golf6-box.png"
+import golf1 from "../assets/images/cars-big/golf6.jpg"
 import golf2 from "../assets/images/cars-big/golf6.jpg"
 import cc1 from "../assets/images/cars-big/passat-box.png"
 import cc2 from "../assets/images/cars-big/passatcc.png"
-import camry1 from "../assets/images/cars-big/toyota-box.png"
+import camry1 from "../assets/images/cars-big/toyotacamry.jpg"
 import camry2 from "../assets/images/cars-big/toyotacamry.jpg"
 
 import miller from "../assets/images/team/1.png"
@@ -31,78 +31,77 @@ export const vehicles = [
     Privod: "4х4",
     transmission: "Механическая",
     fuel: "Дизель",
-    cost: "$45",
+    cost: "45",
     image1: audi1,
     image2: audi2,
-    ac: "yes",
+    ac: "Нет",
     year: "2000",
   },
 
   {
     id: 2,
-    brand: "Volkswagen",
-    model: "Golf",
-    Privod: "4/5",
-    transmission: "automatic",
-    fuel: "Diesel",
-    cost: "$37",
+    brand: "МТЗ",
+    model: "Беларус 3522",
+    Privod: "4х4",
+    transmission: "Гидромехан",
+    fuel: "Дизель",
+    cost: "37",
     image1: golf1,
     image2: golf2,
-    ac: "yes",
-    year: "2008",
+    ac: "Да",
+    year: "2010",
   },
 
   {
     id: 3,
-    brand: "Toyota",
-    model: "Camry",
-    Privod: "4/5",
-    transmission: "manual",
-    fuel: "Petrol",
-    cost: "$30",
+    brand: "МТЗ",
+    model: "Беларус-2022.3",
+    Privod: "4х4",
+    transmission: "Гидромехан",
+    fuel: "Дизель",
+    cost: "37",
     image1: camry1,
-    image2: camry2,
-    ac: "yes",
-    year: "2006",
+    image2: camry1,
+    ac: "Да",
+    year: "2010",
   },
   {
     id: 4,
-    brand: "BMW",
-    model: "320",
-    line: "Modern-Line",
-    Privod: "4/5",
-    transmission: "automatic",
-    fuel: "Diesel",
-    cost: "$35",
-    image1: bmw1,
+    brand: "GOMSELMASH",
+    model: "GS2124",
+    Privod: "4х4",
+    transmission: "Гидростат",
+    fuel: "Дизельный",
+    cost: "30",
+    image1: bmw2,
     image2: bmw2,
-    ac: "yes",
-    year: "2012",
+    ac: "Да",
+    year: "2011",
   },
   {
     id: 5,
-    brand: "Mercedes-Benz",
-    model: "GLK",
-    Privod: "4/5",
-    transmission: "automatic",
-    fuel: "Diesel",
-    cost: "$50",
-    image1: mercedes1,
+    brand: "МАЗ",
+    model: "5551",
+    Privod: "4х4",
+    transmission: "Механическая",
+    fuel: "Дизель",
+    cost: "50",
+    image1: mercedes2,
     image2: mercedes2,
-    ac: "yes",
-    year: "2006",
+    ac: "Нет",
+    year: "2001",
   },
   {
     id: 6,
-    brand: "Volkswagen",
-    model: "Passat CC",
-    Privod: "4/5",
-    transmission: "automatic",
-    fuel: "Petrol",
-    cost: "$25",
-    image1: cc1,
+    brand: "Биоком технология",
+    model: "Грим Макси 4000",
+    Privod: "4х4",
+    transmission: "Гидростат",
+    fuel: "Дизель",
+    cost: "25",
+    image1: cc2,
     image2: cc2,
-    ac: "yes",
+    ac: "Да",
     year: "2008",
   },
 ]
@@ -188,7 +187,7 @@ export const faq = [
 ]
 
 // LOCATIONS
-export const locations = ["Cracow", "Gdansk", "Poznan", "Warsaw", "Wroclaw"]
+export const locations = ["Ворониловичи", "Колозубы", "Ковали", "Полонск", "Клепачи"]
 
 // TESTIMONIALS
 export const testimonials = [

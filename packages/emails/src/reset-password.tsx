@@ -7,8 +7,8 @@ export function ResetPasswordEmail(props: { link?: string }) {
   return (
     <EmailWrapper>
       <div>
-        <h1 className="text-2xl font-bold text-black">Reset Password</h1>
-        <p className="mb-4 text-black">Click below to reset your password</p>
+        <h1 className="text-2xl font-bold text-black">Сброчить пароль</h1>
+        <p className="mb-4 text-black">Нажмите ниже, чтобы сбросить пароль</p>
         <Button href={link} className="bg-primary-500 rounded-xs mb-4 px-3 py-3 text-black">
           Reset password
         </Button>

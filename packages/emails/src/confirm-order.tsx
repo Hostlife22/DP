@@ -7,8 +7,8 @@ export function ConfirmOrderEmail(props: { link?: string }) {
   return (
     <EmailWrapper>
       <div>
-        <h1 className="text-2xl font-bold text-black">Confirm Order</h1>
-        <p className="mb-4 text-black">Click below to confirm your order</p>
+        <h1 className="text-2xl font-bold text-black">Подтвердить заказ</h1>
+        <p className="mb-4 text-black">Нажмите ниже, чтобы подтвердить заказ</p>
         <Button href={link} className="bg-primary-500 rounded-xs mb-4 px-3 py-3 text-black">
           Confirm order
         </Button>

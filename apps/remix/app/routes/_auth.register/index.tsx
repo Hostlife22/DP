@@ -40,7 +40,7 @@ export const action = async ({ request }: ActionFunctionArgs) => {
       try {
         if (formData.get("passwordConfirmation")) return redirect("/")
         const registerSchema = z.object({
-          email: z.string().min(3).email("Invalid email"),
+          email: z.string().min(3).email("Неверный адрес электронной почты"),
           password: z.string().min(8, "Must be at least 8 characters"),
           name: z.string().min(2, "Must be at least 2 characters"),
           rentalUuid: z.string(),
@@ -81,7 +81,7 @@ export default function Register() {
           <FormField required label="Имя" name="name" placeholder="Valery Pukhnarevich" />
           <FormField
             required
-            label="Rental type"
+            label="Тип пользователя"
             name="rentalUuid"
             placeholder="Valery Pukhnarevich"
             input={
@@ -97,14 +97,14 @@ export default function Register() {
 
           <div>
             <FormButton name="_action" value={RegisterActions.Register} className="w-full">
-              Register
+              Регистрация
             </FormButton>
             <FormError />
           </div>
 
           <div className="flex justify-between">
             <Link to="/login" className="hover:opacity-70">
-              Login
+              Войти
             </Link>
             <Link to="/forgot-password" className="hover:opacity-70">
               Забыли пароль?

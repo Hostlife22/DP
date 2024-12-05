@@ -379,7 +379,7 @@ export const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
 
         <View className="flex mt-40" pdfMode={pdfMode}>
           <View className="w-55" pdfMode={pdfMode}>
-            <EditableInput className="bold dark mb-5" value={'Данные клиента:'} pdfMode={pdfMode} />
+            <EditableInput className="bold dark mb-5" value={'Данные работника:'} pdfMode={pdfMode} />
             <EditableInput placeholder="Your Client's Name" value={`ФИО: ${invoice.customer.firstName} ${invoice.customer.lastName}`} pdfMode={pdfMode} />
             <EditableInput placeholder="Client's Address" value={`Адрес: ${invoice.customer.address}`} pdfMode={pdfMode} />
             <EditableInput placeholder="City, State Zip" value={`Индекс: ${invoice.customer.zipCode}`} pdfMode={pdfMode} />

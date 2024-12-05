@@ -1,7 +1,7 @@
 [
   {
     "key": "Privod",
-    "value": "2/3",
+    "value": "4х4",
     "vehicleId": {
       "type": "Vehicle",
       "where": {
@@ -31,7 +31,7 @@
   },
   {
     "key": "Privod",
-    "value": "4/5",
+    "value": "4х4",
     "vehicleId": {
       "type": "Vehicle",
       "where": {
@@ -61,7 +61,7 @@
   },
   {
     "key": "Privod",
-    "value": "4/5",
+    "value": "4х4",
     "vehicleId": {
       "type": "Vehicle",
       "where": {
@@ -91,7 +91,7 @@
   },
   {
     "key": "Privod",
-    "value": "4/5",
+    "value": "4х4",
     "vehicleId": {
       "type": "Vehicle",
       "where": {
@@ -121,7 +121,7 @@
   },
   {
     "key": "Privod",
-    "value": "4/5",
+    "value": "4х4",
     "vehicleId": {
       "type": "Vehicle",
       "where": {
@@ -151,7 +151,7 @@
   },
   {
     "key": "Privod",
-    "value": "4/5",
+    "value": "4х4",
     "vehicleId": {
       "type": "Vehicle",
       "where": {

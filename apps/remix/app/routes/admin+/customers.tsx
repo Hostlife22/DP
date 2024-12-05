@@ -66,7 +66,7 @@ export const action = async ({ request }: ActionFunctionArgs) => {
           firstName: z.string().min(2, "Имя должно быть не менее 2 символов"),
           lastName: z.string().min(2, "Имя должно быть не менее 2 символов"),
           email: z.string().email(),
-          age: z.string().refine((data) => Number(data) >= 18, { message: "Клиенту должно быть не менее 18 лет" }),
+          age: z.string().refine((data) => Number(data) >= 18, { message: "Работнику должно быть не менее 18 лет" }),
           city: z.string().min(2),
           address: z.string().min(2),
           zipCode: z.string(),
@@ -114,7 +114,7 @@ export default function Customers() {
           take={TAKE}
           count={count}
           drawer={(node, item) => (
-            <Drawer trigger={node} title="Клиент">
+            <Drawer trigger={node} title="Работник">
               <Form method="post" replace className="mt-10">
                 <fieldset className="stack flex flex-col gap-1" disabled={!checked}>
                   <FormField
@@ -142,7 +142,7 @@ export default function Customers() {
                     defaultValue={String(item.age)}
                     disabled={!checked}
                   />
-                  <FormField required label="Город" name="city" type="text" defaultValue={item.city} disabled={!checked} />
+                  <FormField required label="Маршрут" name="city" type="text" defaultValue={item.city} disabled={!checked} />
                   <FormField required label="Адрес" name="address" type="text" defaultValue={item.address} disabled={!checked} />
                   <FormField
                     required
@@ -178,7 +178,7 @@ export default function Customers() {
           <Column<Customer> sortKey="lastName" header="Фамилия" row={(customer) => customer.lastName} />
           <Column<Customer> sortKey="email" header="Почта" row={(customer) => customer.email} />
           <Column<Customer> sortKey="phoneNumber" header="Телефон" row={(customer) => customer.phoneNumber} />
-          <Column<Customer> sortKey="city" header="Город" row={(customer) => customer.city} />
+          <Column<Customer> sortKey="city" header="Маршрут" row={(customer) => customer.city} />
           <Column<Customer>
             sortKey="createdAt"
             header="Дата регистрации"

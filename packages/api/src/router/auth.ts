@@ -36,9 +36,9 @@ export const authRouter = createTRPCRouter({
         rental: true,
       },
     })
-    if (!manager) throw new TRPCError({ code: "BAD_REQUEST", message: "Incorrect email or password" })
+    if (!manager) throw new TRPCError({ code: "BAD_REQUEST", message: "Неправильный адрес электронной почты или пароль" })
     const isSamePassword = await comparePasswords(input.password, manager.password)
-    if (!isSamePassword) throw new TRPCError({ code: "BAD_REQUEST", message: "Incorrect email or password" })
+    if (!isSamePassword) throw new TRPCError({ code: "BAD_REQUEST", message: "Неправильный адрес электронной почты или пароль" })
     const token = createAuthToken({ id: manager.uuid })
     return { manager, token }
   }),

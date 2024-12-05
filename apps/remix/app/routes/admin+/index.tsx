@@ -211,7 +211,7 @@ export default function Rental() {
                     disabled={!checked}
                   />
                   <FormField
-                    label="Клиент"
+                    label="Работник"
                     name="phoneNumber"
                     type="tel"
                     defaultValue={item.customer.phoneNumber}
@@ -221,7 +221,7 @@ export default function Rental() {
                     required
                     label="Выдача"
                     name="pickUpUuid"
-                    placeholder="Выберите город"
+                    placeholder="Выберите маршрут"
                     disabled={!checked}
                     input={
                       <Select defaultValue={item.pickUp.id}>
@@ -237,7 +237,7 @@ export default function Rental() {
                     required
                     label="Сдача"
                     name="dropOffUuid"
-                    placeholder="Выберите город"
+                    placeholder="Выберите маршрут"
                     disabled={!checked}
                     input={
                       <Select defaultValue={item.dropOff.id}>
@@ -277,7 +277,7 @@ export default function Rental() {
           <Column<RentalType> sortKey="status" header="Статус" row={getRentStatus} />
           <Column<RentalType>
             sortKey="customer.firstName"
-            header="Клиент"
+            header="Работник"
             row={(rent) => `${rent.customer.firstName} ${rent.customer.lastName}`}
           />
           <Column<RentalType> sortKey="customer.phoneNumber" header="Телефон" row={(rent) => rent.customer.phoneNumber} />

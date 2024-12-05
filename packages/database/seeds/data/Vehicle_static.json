@@ -2,14 +2,14 @@
   {
     "id": 1,
     "uuid": "81b0272a-29ac-4dfe-9a76-0874c17c1073",
-    "brand": "Audi",
-    "model": "A1",
+    "brand": "МТЗ",
+    "model": "Беларус 82.1",
     "year": 2012,
     "description": "Sporty and compact, the Audi A1 S-Line is a stylish choice. With a powerful Diesel engine, it offers a balance of performance and fuel efficiency. Ideal for urban adventures.",
     "mileage": 351113,
     "licensePlate": "IN A1043",
     "pricePerDay": 45,
-    "name": "Audi A1 S-Line",
+    "name": "МТЗ Беларус 82.1",
     "fuelTypeId": {
       "type": "FuelType",
       "where": {
@@ -27,8 +27,8 @@
   {
     "id": 2,
     "uuid": "81b0272a-29ac-4dfe-9a76-1874c17c1073",
-    "brand": "Volkswagen",
-    "model": "Golf",
+    "brand": "МТЗ",
+    "model": "Беларус 3522",
     "year": 2008,
     "description": "The Volkswagen Golf is a reliable and efficient hatchback. Its Diesel engine ensures a smooth ride with excellent fuel economy. Perfect for practical and comfortable driving.",
     "mileage": 455511,

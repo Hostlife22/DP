@@ -90,8 +90,8 @@ export const ReservationComplete = ({ formData, onCloseReservation, onFinalSubmi
           </div>
 
           <ul className="list-inside list-disc text-lg">
-            <li className="text-black">Ваучер на аренду, который необходимо предъявить по прибытии в пункт проката</li>
-            <li className="text-black">Бесплатный номер службы поддержки клиентов</li>
+            <li className="text-black">Заявку на аренду, который необходимо предъявить по прибытии в автопарк</li>
+            <li className="text-black">Бесплатный номер службы поддержки работников</li>
           </ul>
         </div>
         <div className="grid grid-cols-1 gap-14 border-b p-8">
@@ -162,9 +162,9 @@ export const ReservationComplete = ({ formData, onCloseReservation, onFinalSubmi
               />
               <ReservationField
                 register={register("city")}
-                label="Город"
+                label="Маршрут"
                 type="text"
-                placeholder="город"
+                placeholder="маршрут"
                 minLength={3}
                 maxLength={30}
               />
@@ -178,10 +178,7 @@ export const ReservationComplete = ({ formData, onCloseReservation, onFinalSubmi
               />
             </div>
             <div className="flex mt-4 flex-col xs:col-span-2">
-              <div className="flex items-center gap-2">
-                <input type="checkbox" className="h-4 w-4" />
-                <p className="text-black">Пожалуйста, присылайте мне последние новости и обновления</p>
-              </div>
+              
               <div className="flex  items-center justify-center gap-5 p-10 xs:flex-row">
                 <button
                   className="flex min-w-[172px] items-center gap-2 whitespace-nowrap rounded bg-black px-7 py-4 text-white shadow-lg shadow-gray2 transition-all duration-300 hover:opacity-80"

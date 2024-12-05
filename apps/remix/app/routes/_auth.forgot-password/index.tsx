@@ -16,7 +16,7 @@ export const headers = () => {
 
 export const action = async ({ request }: ActionFunctionArgs) => {
   const formData = await request.formData()
-  const resetSchema = z.object({ email: z.string().email("Invalid email") })
+  const resetSchema = z.object({ email: z.string().email("Неверный адрес электронной почты") })
   const result = await validateFormData(resetSchema, formData)
   if (!result.success) return formError(result)
   const { createFlash } = await getFlashSession(request)
@@ -24,11 +24,11 @@ export const action = async ({ request }: ActionFunctionArgs) => {
   try {
     await trpcSsrClient.auth.forgotPassword.mutate(data)
     return redirect("/login", {
-      headers: { "Set-Cookie": await createFlash(FlashType.Info, "Reset link sent to your email") },
+      headers: { "Set-Cookie": await createFlash(FlashType.Info, "Ссылка для сброса отправлена ​​на ваш адрес электронной почты") },
     })
   } catch (error) {
     return badRequest(error, {
-      headers: { "Set-Cookie": await createFlash(FlashType.Error, "Reset password error") },
+      headers: { "Set-Cookie": await createFlash(FlashType.Error, "Ошибка сброса пароля") },
     })
   }
 }
@@ -38,11 +38,11 @@ export default function ForgotPassword() {
     <Form method="post">
       <div className="stack">
         <h1 className="text-4xl font-bold">Забыли пароль?</h1>
-        <p>Enter your email below to receive your password reset instructions.</p>
+        <p>Введите свой адрес электронной почты ниже, чтобы получить инструкции по сбросу пароля.</p>
         <FormField required label="Введите адрес" name="email" placeholder="jim@gmail.com" />
         <FormError />
-        <FormButton className="w-full">Send instructions</FormButton>
-        <Link to="/login">Login</Link>
+        <FormButton className="w-full">Отправить инструкции</FormButton>
+        <Link to="/login">Логин</Link>
       </div>
     </Form>
   )

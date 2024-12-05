@@ -62,7 +62,7 @@ const Navbar = ({ isDark, isAuth }: INavbarProps): ReactElement => {
           <ul className="flex flex-col items-center gap-7 text-2xl">
             <NavLink to={"/"}>Главная</NavLink>
             <NavLink to={"/about"}>О нас</NavLink>
-            <NavLink to={"/vehicles"}>Автомобили</NavLink>
+            <NavLink to={"/vehicles"}>Техника</NavLink>
             <NavLink to={"/testimonials"}>Отзывы</NavLink>
             <NavLink to={"/team"}>Руководство</NavLink>
             <NavLink to={"/contact"}>Контакты</NavLink>
@@ -77,7 +77,7 @@ const Navbar = ({ isDark, isAuth }: INavbarProps): ReactElement => {
           <ul className="hidden gap-6 px-5 lg:flex">
             <NavLink to={"/"}>Главная</NavLink>
             <NavLink to={"/about"}>О нас</NavLink>
-            <NavLink to={"/vehicles"}>Автомобили</NavLink>
+            <NavLink to={"/vehicles"}>Техника</NavLink>
             <NavLink to={"/testimonials"}>Отзывы</NavLink>
             <NavLink to={"/team"}>Руководство</NavLink>
             <NavLink to={"/contact"}>Контакты</NavLink>

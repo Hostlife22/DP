@@ -5,7 +5,7 @@ interface CheckEmailNotificationProps {
 export const CheckEmailNotification = ({ onClose }: CheckEmailNotificationProps) => {
   return (
     <div className="mb-5 flex items-center justify-between gap-2 bg-[rgb(195,250,190)] p-4">
-      <p className="font-medium text-[rgb(42,104,23)]">Check your email to confirm the order</p>
+      <p className="font-medium text-[rgb(42,104,23)]">Проверьте свою электронную почту, чтобы подтвердить заказ</p>
       <div className="h-fit w-6 cursor-pointer text-[rgb(42,104,23)]" onClick={onClose}>
         <svg
           xmlns="http://www.w3.org/2000/svg"

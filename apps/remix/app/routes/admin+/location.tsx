@@ -19,7 +19,7 @@ import { FlashType, getFlashSession } from "~/services/session/flash.server"
 const TAKE = 10
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Города" }, { name: "description", content: "Доступные города" }]
+  return [{ title: "Маршруты" }, { name: "description", content: "Доступные маршруты" }]
 }
 export const headers = () => {
   return {
@@ -81,7 +81,7 @@ export const action = async ({ request }: ActionFunctionArgs) => {
         if (!result.success) return formError(result)
         const data = result.data
         await trpcSsrClient.location.createLocation.mutate(data)
-        const headers = new Headers([["Set-Cookie", await createFlash(FlashType.Info, `Новый город успешно создан`)]])
+        const headers = new Headers([["Set-Cookie", await createFlash(FlashType.Info, `Новый маршрут успешно создан`)]])
         return redirect("/admin/location", { headers })
       } catch (error) {
         if (error instanceof TRPCClientError) return formError({ formError: error.message })
@@ -104,7 +104,7 @@ export default function Location() {
 
   return (
     <div className="stack">
-      <h1 className="text-4xl text-center mb-8">Города</h1>
+      <h1 className="text-4xl text-center mb-8">Маршруты</h1>
       <Search />
       <Tile>
         <Table<Location>
@@ -113,7 +113,7 @@ export default function Location() {
           take={TAKE}
           count={count}
           drawer={(node, item) => (
-            <Drawer trigger={node} title="Город">
+            <Drawer trigger={node} title="Маршрут">
               <Form method="post" replace className="mt-10">
                 <fieldset className="stack flex flex-col gap-1" disabled={!checked}>
                   <FormField required label="Наименование" name="city" type="text" defaultValue={item.city} disabled={!checked} />
@@ -139,11 +139,11 @@ export default function Location() {
           )}
         >
           <Column<Location> sortKey="id" header="№" row={(customer) => customer.id} />
-          <Column<Location> sortKey="city" header="Город" row={(customer) => customer.city} />
+          <Column<Location> sortKey="city" header="Маршрут" row={(customer) => customer.city} />
           <Column<Location> sortKey="createdAt" header="Добавлено" row={(customer) => getFormattedDate(customer.createdAt)} />
         </Table>
       </Tile>
-      <Drawer trigger={<BrandButton className="ml-auto mt-4">Добавить новый город</BrandButton>} title="Добавить новый город">
+      <Drawer trigger={<BrandButton className="ml-auto mt-4">Добавить новый маршрут</BrandButton>} title="Добавить новый маршрут">
         <Form method="post" replace className="mt-10">
           <fieldset className="stack flex flex-col gap-1">
             <FormField required label="Наименование" name="city" type="text" />
