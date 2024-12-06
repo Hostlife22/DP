@@ -153,9 +153,9 @@ export default function Rental() {
                 <fieldset className="stack flex flex-col gap-1" disabled={!checked}>
                   <FormField
                     required
-                    label="Автомобиль"
+                    label="Техника"
                     name="vehicleUuid"
-                    placeholder="Выберите Автомобиль"
+                    placeholder="Выберите технику"
                     disabled={!checked}
                     input={
                       <Select defaultValue={item.vehicle.id}>
@@ -273,7 +273,7 @@ export default function Rental() {
           )}
         >
           <Column<RentalType> sortKey="id" header="№" row={(rent) => rent.id} />
-          <Column<RentalType> sortKey="vehicle.name" header="Автомобиль" row={(rent) => rent.vehicle.name} />
+          <Column<RentalType> sortKey="vehicle.name" header="Техника" row={(rent) => rent.vehicle.name} />
           <Column<RentalType> sortKey="status" header="Статус" row={getRentStatus} />
           <Column<RentalType>
             sortKey="customer.firstName"

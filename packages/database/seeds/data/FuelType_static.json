@@ -2,7 +2,7 @@
   {
     "id": 1,
     "uuid": "81b0272a-29ac-4dfe-9a76-9874c17c1073",
-    "name": "Газ"
+    "name": "Говно"
   },
   {
     "id": 2,
@@ -12,16 +12,16 @@
   {
     "id": 3,
     "uuid": "e3c2fde8-3690-4d1c-8b6b-a03602693f45",
-    "name": "Electric"
+    "name": "Электрика"
   },
   {
     "id": 4,
     "uuid": "b9496613-19dd-4b29-8913-ee022c42afe6",
-    "name": "Hybrid"
+    "name": "Гибрид"
   },
   {
     "id": 5,
     "uuid": "b9496619-19dd-4b29-8913-ee022c42afe6",
-    "name": "Petrol"
+    "name": "Бензин"
   }
 ]

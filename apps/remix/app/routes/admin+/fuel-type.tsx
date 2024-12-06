@@ -29,15 +29,15 @@ export default function FuelTypes() {
   const getFuelType = useCallback((fuelTypeData: FuelType) => {
     switch (fuelTypeData.name) {
       case FuelTypeEnum.Diesel:
-        return "Дизель"
+        return "Diesel"
       case FuelTypeEnum.Electric:
-        return "Электрический"
+        return "Electric"
       case FuelTypeEnum.Gas:
-        return "Газ"
+        return "Gas"
       case FuelTypeEnum.Hybrid:
-        return "Гибрид"
+        return "Hybrid"
       case FuelTypeEnum.Petrol:
-        return "Бензин"
+        return "Petrol"
       default: {
         const _exhaustiveCheck: never = fuelTypeData.name
         return _exhaustiveCheck
