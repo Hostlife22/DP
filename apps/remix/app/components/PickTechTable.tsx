@@ -13,7 +13,7 @@ interface PickTechTableProps {
 
 export const PickTechTable = ({ cost, brand, model, year, Privod, ac, transmission, fuel }: PickTechTableProps) => {
   return (
-    <div className="flex min-w-[250px] flex-col">
+    <div className="flex min-w-[350px] flex-col">
       <div className="bg-green-600 px-4 py-1 text-center text-lg text-white">
         <span className="text-2xl font-medium">Характеристика</span>
       </div>
