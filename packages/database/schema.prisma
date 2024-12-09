@@ -20,8 +20,8 @@ enum RentStatusEnum {
 
 // Система единиц измерения
 enum UnitTypeEnum {
-  Metric
-  Imperial
+  Driver
+  Dispatcher
 }
 
 

@@ -2,11 +2,22 @@
   {
     "id": 1,
     "uuid": "81c0272a-79ac-7dfe-9a76-0874c17c1073",
-    "name": "Rent car (metric)",
+    "name": "Диспетчер",
     "unitTypeId": {
       "type": "UnitType",
       "where": {
-        "name": "Metric"
+        "name": "Driver"
+      }
+    }
+  },
+  {
+    "id": 2,
+    "uuid": "81c0272a-79ac-7dfe-9a76-0874c17c1076",
+    "name": "Водитель",
+    "unitTypeId": {
+      "type": "UnitType",
+      "where": {
+        "name": "Dispatcher"
       }
     }
   }
